@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms Exercise</title>
+    <meta charset="UTF-8">
+   <meta name="description" content="Free Web tutorials">
+   <meta name="keywords" content="your, relevant, keywords, in, a, comma, separated, list">
+   <meta name="author" content="Jason Cavallari">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="">
+
+    <style>
+      body {
+        background-color:cadetblue;
+      }
+      #content {
+        width:90%;
+        margin:auto;
+        text-align:center;
+      }
+      form {
+        font-size:1.5em;
+        margin-left:5%;
+        padding-top:5%;
+        background-color:cornsilk;
+        border:2px dotted #000;
+      }
+      input {
+        margin-bottom:2%;
+        font-size:1em;
+      }
+      input#submit {
+        border:4px solid yellow;
+        border-radius:50px 50px;
+        text-align:center;
+        background-color:chocolate;
+        color:white;
+        font-weight:bold;
+        padding:20px;
+      }
+      #submit:hover {
+        background-color:cornsilk;
+        color:chocolate;
+        font-size:150%;
+        border:2px solid black;
+      }
+    </style>
+ </head>
+
+ <body>
+<div>
+  <form method="post" action="https://idesstage2.bc.edu/class/results.php">
+    <label for="firstname"><strong>First Name:</strong></label><br>
+    <input type="text" id="firstname" name="firstname"><br>
+    <label for="lastname"><strong>Last Name:</strong></label><br>
+    <input type="text" id="lastname" name="lastname"><br>
+    <label for="email"><strong>Email:</strong></label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="icecream"><strong>Your Favorite Ice Cream:</strong></label>
+    <select id="icecream" name="icecream">
+      <option value="chocolate">Chocolate</option>
+      <option value="vanilla">Vanilla</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="mintchip">Mint Chip</option>
+      <option value="pistachio">Pistachio</option>
+      <option value="rumraisin">Rum Raisin</option>
+    </select><br>
+    <label for="lifegoals"><strong>What do you want to do with your life?</strong></label>
+    <textarea id="lifegoals" name="lifegoals" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+ </body>
+</html>
