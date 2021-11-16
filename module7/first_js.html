@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>My First JavaScript</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="My First JavaScript">
+   <meta name="keywords" content="javascript, tutorial, exercise">
+   <meta name="author" content="Jason Cavallari">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="">
+
+   <style>
+     button {
+       display:block;
+       margin-top:20px;
+     }
+           
+
+
+   </style>
+ </head>
+
+ <body>
+   <h1>JavaScript Example</h1>
+   <button id="myButton" onclick="alert('Hi there!')">Click me.</button>
+   <div id="date_display">
+     <button id="button2" onclick="alert(Date())">Click me too.</button>
+   </div>
+   <script> var date_time=Date();
+   document.getElementById("date_display").innerHTML=date_time;</script>
+
+
+ </body>
+</html>
