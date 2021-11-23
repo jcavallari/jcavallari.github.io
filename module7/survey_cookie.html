@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Survey</title>
+    <meta charset="UTF-8">
+   <meta name="music survey" content="Music Survey">
+   <meta name="keywords" content="music, survey, forms, html">
+   <meta name="author" content="Jason Cavallari">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script>
+     function setCookie() {
+       let cname = 'firstname'
+       const d = new Date();
+       d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
+       let expires = "expires="+d.toUTCString();
+       let cvalue = document.forms[0].firstname.value;
+       document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+       return true;
+}
+
+function getCookie() {
+  let name = "firstname" + "=";
+  let decodedCookie = decodeURIcomponent(document.cookie);
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let fname = getCookie()
+  if (fname != "") {
+    alert("Welcome again " + fname);
+  } else {
+    alert("Submit the form to set your cookie.")
+    }
+  }
+   </script>
+
+    <style>
+      body {
+        font-size:1.3em;
+        background-color:beige;
+      }
+      content {
+        width:90%;
+        margin:auto;
+      }
+      h1 {
+        text-align:center;
+      }
+      form {
+        margin-left:5%;
+      }
+      input {
+        margin-bottom:2%;
+      }
+      input[type=submit] {
+        display:block;
+        background-color:#33ff99;
+        font-weight:bold;
+        padding:20px;
+        font-size:1.5em;
+      }
+      select option {
+        font-size:1.75em;
+        width:150px;
+      }
+    </style>
+ </head>
+
+ <body onload="checkCookie()">
+
+   <h1>Music Survey</h1>
+   <form action="https://idesstage2.bc.edu/class/results.php" method="post" onSubmit="return setCookie()">
+     <label for="firstname">First Name:</label><br>
+     <input type="text" id="firstname" name="firstname"><br>
+     <label for="lastname">Last Name:</label><br>
+     <input type="text" id="lastname" name="lastname"><br>
+     <label for="email">Email:</label><br>
+     <input type="email" id="email" name="email" required><br>
+   
+     <fieldset>
+       <legend>What is your favorite type of music?</legend>
+       <input type="checkbox" id="favtype1" name="favtype1" value="Pop">
+       <label for="favtype1">Pop</label><br>
+       <input type="checkbox" id="favtype2" name="favtype2" value="Rock">
+       <label for="favtype2">Rock</label><br>
+       <input type="checkbox" id="favtype3" name="favtype3" value="Rap">
+       <label for="favtype3">Rap</label><br>
+     </fieldset>
+    
+     <fieldset>
+       <legend>How often do you purchase music?</legend>
+       <input type="radio" id="daily" name="daily" value="Daily">
+       <label for="daily">Daily</label><br>
+       <input type="radio" id="weekly" name="weekly" value="Weekly">
+       <label for="weekly">Weekly</label><br>
+       <input type="radio" id="monthly" name="monthly" value="Monthly">
+       <label for="monthly">Monthly</label><br>
+     </fieldset>
+   
+     <h4>Where do you primarily listen to music?</h4>
+     <select id="locations" name="locations">
+       <option value="home">Home</option>
+       <option value="car">Car</option>
+       <option value="work">Work</option>
+       <option value="shower">Shower</option>
+     </select>
+  
+     <label for="musicessay"><h4>What role does music play in your life?</h4></label><br>
+     <textarea id="musicessay" name="musicessay" rows="3" cols="60"></textarea><br>
+
+     <input id="submit" type="submit" value="Submit">
+    </form>
+    
+
+
+ </body>
+</html>
