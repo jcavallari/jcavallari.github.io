@@ -1,0 +1,24 @@
+body {
+    padding:20px;
+    background-color:whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    padding:5px;
+}
+h3 {
+    padding:5px;
+}
+div {
+    border:2px black solid;
+}
+p {
+    padding:5px;
+}
+#footer {
+    float:left;
+    bottom:0;
+    height:75px;
+    width:100%;
+    background-color:lightslategray;
+}

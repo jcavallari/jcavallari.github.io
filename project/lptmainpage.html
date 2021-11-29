@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Limited Play Time</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Board game reviews in 30 minutes or less.">
+   <meta name="keywords" content="board games, reviews, podcast">
+   <meta name="author" content="Jason Cavallari">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="lptstylesheet.css">
+
+   <style>
+     div#header {
+       background-color:lightslategray;
+       height:150px;
+       position:relative;
+     }
+     div#header_links {
+       border:none;
+       position:absolute;
+       bottom:5px;
+       left:155px;
+     }
+     div#header_links a {
+       padding:20px;
+       font-size:2em;
+     }
+     div#currentep {
+       float:left;
+       height:400px;
+       width:48%;
+       min-width:600px;
+     }
+     div#currentvid {
+       float:right;
+       height:400px;
+       min-width:50%;
+     }
+     div#recentbgs {
+       height:300px;
+       width:100%;
+       float:left;
+     }
+     div#recentbgs img {
+       height:150px;
+       width:150px;
+       float:left;
+       padding-left:6%;
+       padding-right:6%;
+       padding-bottom:5px;
+     }
+     div#recentbgs a {
+       display:inline-block;
+       height:150px;
+       width:150px;
+       padding-left:6%;
+       padding-right:6%;
+       padding-bottom:5px;
+     }
+     div#button_contact {
+       border:none;
+       position:relative;
+       float:right;
+       bottom:50%;
+       right:30px;
+     }
+   </style>
+ </head>
+
+ <body>
+     <div id="header">
+       <img alt="LPT Logo" id="logo" src="images/lptlogo.png" style="float:left" height="150px" width="150px">
+       <div id="header_links">
+       <a href="lptepisodes.html">Episodes</a>
+       <a href="lptaboutpage.html">About</a>
+       </div>
+       <div id="header_button" style="position:absolute; top:50%; right:5px; border:none">
+       <button type="button">Sign Up for Our Newsletter!</button>
+       </div>
+    </div>
+   <div id="welcome">
+     <h1 style="text-align:center">Welcome!</h1>
+     <p style="text-align:center">Welcome to the website for Limited Play Time, the board game podcast bringing you board game reviews in 30 minutes or less, or the next episode is free!</p>
+   </div>
+   <div id="currentep">
+     <h3>Current Episode</h3>
+     <p>This week we’re flipping the script on our previous episode and talking about our 10 greatest surprises in board gaming! These are the games that had the widest gulf between expectations and pleasant outcomes! It’s like a second helping of Limited Play Time top 10 lists during this festive Thanksgiving week!</p>
+     <img src="images/lazerryderz.jpg" style="float:left; padding:5px; display:block; max-height:150px">
+     <audio controls>
+       <source src="audio/LPT121_Surprises.mp3" type="audio/mp3">
+       Your browser does not support audio.
+     </audio>
+   </div>
+   <div id="currentvid">
+     <h3>Recent Video</h3>
+     <iframe width="603px" height="315px" style="padding:5px;" src="https://www.youtube.com/embed/8rHhmUJ2WeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   <div id="recentbgs">
+     <h3>What We're Playing</h3>
+     <p>Check out these titles we've been playing recently!</p>
+     <a href="https://boardgamegeek.com/boardgame/174430/gloomhaven" target="_blank"><img src="images/gloomhaven.jpg" alt="Gloomhaven box art"></a>
+     <a href="https://boardgamegeek.com/boardgame/55690/kingdom-death-monster" target="_blank"><img src="images/kdm.jpg" alt="Kingdom Death Monster box art"></a>
+     <a href="https://boardgamegeek.com/boardgame/30549/pandemic" target="_blank"><img src="images/pandemic.jpg" alt="Pandemic box art"></a>
+     <a href="https://boardgamegeek.com/boardgame/167355/nemesis" target="_blank"><img src="images/nemesis.jpg" alt="Nemesis box art"></a>
+   </div>
+   <div id="footer">
+       <p>&copy Limited Play Time 2021</p>
+       <a id ="insta" href=""></a>
+       <a id="twitter" href=""></a>
+       <div id="button_contact">
+       <button type="button" id="contact" onclick="openMail()">Contact us!</button>
+       </div>
+   </div>
+   <script>
+     function openMail() {
+       window.open("mailto:podcast@limitedplaytime.com")
+     }
+   </script>
+
+
+ </body>
+</html>
