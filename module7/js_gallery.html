@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Your Page Title</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Free Web tutorials">
+   <meta name="keywords" content="your, relevant, keywords, in, a, comma, separated, list">
+   <meta name="author" content="Your Name">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="">
+
+   <style>
+     img {
+       display:none;
+       width:100%;
+     }
+           
+
+
+   </style>
+ </head>
+
+ <body>
+  <div>
+    <img src="https://picsum.photos/1000/301">
+    <img src="https://picsum.photos/1000/302">
+    <img src="https://picsum.photos/1000/303">
+    <img src="https://i.picsum.photos/id/555/200/300.jpg?hmac=HbW_j1WvVDr5eTwXP2bsohZEiyBe-G6fsPkgAxJe9ps">
+    <img src="https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U">
+  </div>
+  <script>
+    const images = document.querySelectorAll("img");
+    let i = 0;
+    setInterval(function(){ 
+
+if(i == 0) {
+  images[i].style.display = 'block';
+} else if(i == images.length ) {
+  images[i - 1].style.display = 'none';
+  images[0].style.display = 'block';
+  i = 0;
+} else {
+  images[i - 1].style.display = 'none';
+  images[i].style.display = 'block';
+}
+
+i++;
+
+}, 2000);
+  </script>
+
+
+ </body>
+</html>
