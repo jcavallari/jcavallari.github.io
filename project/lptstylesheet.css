@@ -1,19 +1,76 @@
-body {
+  body {
     padding:20px;
     background-color:whitesmoke;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+    background-image:url('images/chessbackground.jpg');
+    overflow-x:hidden;
+  }
+  div#header {
+    background-color:lightslategray;
+    height:150px;
+    position:relative;
+    border:2px solid black;
+  }
+  div#header_links {
+    border:none;
+    position:absolute;
+    bottom:50px;
+    left:155px;
+  }
+  div#header_links a:link {
+    text-decoration:none;
+    color:lightpink;
+    padding:20px;
+    font-size:2em;
+    background-color:black;
+  }
+  div#header_links a:hover {
+    background-color:cadetblue;
+  }
+  div#header_links a:visited {
+      color:lightpink;
+  }
+  #signup_btn {
+    background-color:cyan;
+    font-size:16px;
+    padding:14px 40px;
+    border-radius:8px;
+    transition-duration:0.4s;
+  }
+  #signup_btn:hover {
+    background-color:white;
+  }
+  div.episode {
+    float:left;
+    padding:40px;
+    max-width:42%;
+    max-height:400px;
+  }
+  img.ep_art {
+    width:200px;
+    height:300px;
+    object-fit:cover;
+    float:left;
+    position:relative;
+    bottom:50px;
+  }
 h1 {
     padding:5px;
 }
 h3 {
     padding:5px;
 }
-div {
-    border:2px black solid;
+h5.eptitle {
+  width:275px;
+  float:right;
+  text-align:center;
 }
 p {
     padding:5px;
+}
+hr.rounded {
+    border-top:8px solid black;
+    border-radius:5px;
 }
 #footer {
     float:left;
@@ -21,4 +78,19 @@ p {
     height:75px;
     width:100%;
     background-color:lightslategray;
+    border:2px solid black;
 }
+div#button_contact {
+    border:none;
+    position:relative;
+    float:right;
+    bottom:50px;
+    right:30px;
+  }
+  div#footer_links {
+    border:none;
+    width:150px;
+    position:relative;
+    left:300px;
+    bottom:40px;
+  }
