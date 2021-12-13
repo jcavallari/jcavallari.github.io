@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Limited Play Time - About</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Board game reviews in 30 minutes or less.">
+  <meta name="keywords" content="board games, reviews, podcast">
+  <meta name="author" content="Jason Cavallari">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="lptstylesheet.css">
+  <script src="lptscripts.js"></script>
+
+   <style>
+     h1 {
+       text-align:center;
+     }
+     div.bio {
+       float:left;
+       max-width:45%;
+       padding-bottom:20px;
+     }
+     div.bio img {
+       float:left;
+     }
+     div.bio p {
+       float:left;
+       width:200px;
+       padding-left:10px;
+     }
+           
+
+
+   </style>
+ </head>
+
+ <body>
+  <div id="header">
+    <img alt="LPT Logo" id="logo" src="images/lptlogo.png" style="float:left; border-right:2px solid black" height="150px" width="150px">
+    <div id="header_links">
+    <a href="lptepisodes.html">Episodes</a>
+    <a href="lptabout.html">About</a>
+    </div>
+    <div id="header_button" style="position:absolute; top:35%; right:5px; border:none">
+    <button type="button" id="signup_btn" onClick=openForm()>Sign Up for Our Newsletter!</button>
+    </div>
+ </div>
+ <div id="about">
+   <h1>Who are Limited Play Time?</h1>
+   <p style="text-align:center; padding-left:150px; padding-right:150px;">Like many adults in the board game hobby, we’re busy people with limited time. So we created Limited Play Time to discuss the games we’ve had time to try, but often don’t have time to do deep dives or dozens of repeated plays of, in a short enough time that you could listen to an episode in one day’s full commute to and from work.</p>
+ </div>
+ <div class="bio">
+   <img src="images/CableJason.jpg" alt="Jason as Cable from Marvel Comics" width=300px>
+   <p><b>Jason</b> enjoys history lessons that he teaches to others, cybernetic implants, time-travel, and plastic miniatures. </p>
+ </div>
+ <div class="bio" style="padding-left:150px;">
+   <img src="images/kyleabout.jpg" alt="Kyle playing a board game" width=300px>
+   <p><b>Kyle</b> enjoys little wooden cubes, hexagons, skulls colored red (but not The Red Skull), and neoprene. </p>
+ </div>
+ </div>
+ <div id="footer">
+  <p>&copy Limited Play Time 2021</p>
+  <div id="footer_links">
+  <a id ="insta" href="https://www.instagram.com/limitedplaytimepodcast/" style="padding-right:5px">Instagram</a>
+  <a id="twitter" href="https://twitter.com/limitedplaytime">Twitter</a>
+  </div>
+  <div id="button_contact">
+  <button type="button" id="contact" onclick="openMail()">Contact us!</button>
+  </div>
+</div>
+
+
+ </body>
+</html>

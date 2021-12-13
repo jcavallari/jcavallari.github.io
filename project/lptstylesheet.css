@@ -44,7 +44,6 @@
     float:left;
     padding:40px;
     max-width:42%;
-    max-height:400px;
   }
   img.ep_art {
     width:200px;
@@ -85,7 +84,7 @@ div#button_contact {
     bottom:50px;
     right:30px;
   }
-  div#footer_links {
+div#footer_links {
     border:none;
     width:150px;
     position:relative;
